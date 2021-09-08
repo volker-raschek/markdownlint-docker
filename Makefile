@@ -2,7 +2,6 @@
 # Only required to install a specifiy version
 MARKDOWNLINT_VERSION?=
 
-
 # CONTAINER_RUNTIME
 # The CONTAINER_RUNTIME variable will be used to specified the path to a
 # container runtime. This is needed to start and run a container image.
