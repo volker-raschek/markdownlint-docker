@@ -6,8 +6,6 @@ ARG MARKDOWNLINT_VERSION
 RUN set -ex && \
     apk add --no-cache nodejs=${NODEJS_VERSION} nodejs-npm=${NODEJS_VERSION}
 
-RUN echo ${MARKDOWNLINT_VERSION}
-
 RUN if [ ! -z "${MARKDOWNLINT_VERSION}" ]; then set -ex; npm install -g markdownlint-cli@${MARKDOWNLINT_VERSION}; fi
 RUN if [ -z "${MARKDOWNLINT_VERSION}" ]; then set -ex; npm install -g markdownlint-cli; fi
 
