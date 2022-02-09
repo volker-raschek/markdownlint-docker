@@ -1,6 +1,6 @@
 FROM docker.io/library/node:lts-alpine3.15 AS build
 
-ARG MARKDOWNLINT_VERSION
+ARG MARKDOWNLINT_VERSION=master
 
 RUN set -ex && \
     apk update && \
