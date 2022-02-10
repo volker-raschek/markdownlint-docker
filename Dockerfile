@@ -12,4 +12,8 @@ RUN git clone --branch ${MARKDOWNLINT_VERSION} https://github.com/igorshubovych/
     npm install --production && \
     npm install --global
 
+WORKDIR /work
+
+RUN ln -fs /work /workspace
+
 ENTRYPOINT [ "/usr/local/bin/markdownlint" ]
