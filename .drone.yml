@@ -54,16 +54,17 @@ steps:
 - name: build
   image: plugins/docker
   settings:
-    dockerfile: Dockerfile
     auto_tag: false
     dry_run: true
+    force_tag: true
+    no_cache: true
+    purge: true
     tags: latest-amd64
     repo: volkerraschek/markdownlint
     username:
       from_secret: container_image_registry_user
     password:
       from_secret: container_image_registry_password
-    no_cache: true
   volumes:
   - name: docker_socket
     path: /var/run/docker.sock
@@ -115,16 +116,17 @@ steps:
 - name: build
   image: plugins/docker
   settings:
-    dockerfile: Dockerfile
     auto_tag: false
     dry_run: true
+    force_tag: true
+    no_cache: true
+    purge: true
     tags: latest-arm-v7
     repo: volkerraschek/markdownlint
     username:
       from_secret: container_image_registry_user
     password:
       from_secret: container_image_registry_password
-    no_cache: true
 
 - name: notify
   image: drillster/drone-email
@@ -176,16 +178,17 @@ steps:
 - name: build
   image: plugins/docker
   settings:
-    dockerfile: Dockerfile
     auto_tag: false
     dry_run: true
+    force_tag: true
+    no_cache: true
+    purge: true
     tags: latest-arm64-v8
     repo: volkerraschek/markdownlint
     username:
       from_secret: container_image_registry_user
     password:
       from_secret: container_image_registry_password
-    no_cache: true
 
 - name: notify
   image: drillster/drone-email
@@ -237,15 +240,16 @@ steps:
 - name: build
   image: plugins/docker
   settings:
-    dockerfile: Dockerfile
     auto_tag: false
+    force_tag: true
+    no_cache: true
+    purge: true
     tags: latest-amd64
     repo: volkerraschek/markdownlint
     username:
       from_secret: container_image_registry_user
     password:
       from_secret: container_image_registry_password
-    no_cache: true
   volumes:
   - name: docker_socket
     path: /var/run/docker.sock
@@ -296,15 +300,16 @@ steps:
 - name: build
   image: plugins/docker
   settings:
-    dockerfile: Dockerfile
     auto_tag: false
+    force_tag: true
+    no_cache: true
+    purge: true
     tags: latest-arm-v7
     repo: volkerraschek/markdownlint
     username:
       from_secret: container_image_registry_user
     password:
       from_secret: container_image_registry_password
-    no_cache: true
 
 - name: notify
   image: drillster/drone-email
@@ -355,15 +360,16 @@ steps:
 - name: build
   image: plugins/docker
   settings:
-    dockerfile: Dockerfile
     auto_tag: false
+    force_tag: true
+    no_cache: true
+    purge: true
     tags: latest-arm64-v8
     repo: volkerraschek/markdownlint
     username:
       from_secret: container_image_registry_user
     password:
       from_secret: container_image_registry_password
-    no_cache: true
 
 - name: notify
   image: drillster/drone-email
@@ -465,9 +471,11 @@ steps:
 - name: build
   image: plugins/docker
   settings:
-    dockerfile: Dockerfile
     auto_tag: true
     auto_tag_suffix: amd64
+    force_tag: true
+    no_cache: true
+    purge: true
     repo: volkerraschek/markdownlint
     username:
       from_secret: container_image_registry_user
@@ -475,7 +483,6 @@ steps:
       from_secret: container_image_registry_password
     build_args:
     - MARKDOWNLINT_VERSION=${DRONE_TAG}
-    no_cache: true
   volumes:
   - name: docker_socket
     path: /var/run/docker.sock
@@ -520,9 +527,11 @@ steps:
 - name: build
   image: plugins/docker
   settings:
-    dockerfile: Dockerfile
     auto_tag: true
     auto_tag_suffix: arm-v7
+    force_tag: true
+    no_cache: true
+    purge: true
     repo: volkerraschek/markdownlint
     username:
       from_secret: container_image_registry_user
@@ -530,7 +539,6 @@ steps:
       from_secret: container_image_registry_password
     build_args:
     - MARKDOWNLINT_VERSION=${DRONE_TAG}
-    no_cache: true
   volumes:
   - name: docker_socket
     path: /var/run/docker.sock
@@ -575,9 +583,11 @@ steps:
 - name: build
   image: plugins/docker
   settings:
-    dockerfile: Dockerfile
     auto_tag: true
-    auto_tag_suffix: arm64-v8
+    auto_tag_suffix: ard64-v8
+    force_tag: true
+    no_cache: true
+    purge: true
     repo: volkerraschek/markdownlint
     username:
       from_secret: container_image_registry_user
@@ -585,7 +595,6 @@ steps:
       from_secret: container_image_registry_password
     build_args:
     - MARKDOWNLINT_VERSION=${DRONE_TAG}
-    no_cache: true
   volumes:
   - name: docker_socket
     path: /var/run/docker.sock
