@@ -1,4 +1,4 @@
-FROM docker.io/library/node:lts-alpine3.15 AS build
+FROM docker.io/library/node:lts-alpine3.16 AS build
 
 ARG MARKDOWNLINT_VERSION=master
 
