@@ -584,7 +584,7 @@ steps:
   image: docker.io/plugins/docker:latest
   settings:
     auto_tag: true
-    auto_tag_suffix: ard64-v8
+    auto_tag_suffix: arm64-v8
     force_tag: true
     no_cache: true
     purge: true
