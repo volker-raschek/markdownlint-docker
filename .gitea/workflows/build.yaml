@@ -15,4 +15,4 @@ jobs:
     - name: build application
       run: |
         ls -la /run
-        make container-image/build CONTAINER_RUNTIME=podman
+        make container-image/build CONTAINER_RUNTIME=docker
