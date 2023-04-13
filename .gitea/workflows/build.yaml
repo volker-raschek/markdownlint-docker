@@ -13,4 +13,4 @@ jobs:
     - name: checkout repo
       uses: actions/checkout@v3
     - name: build application
-      run: make container-image/build
+      run: make container-image/build CONTAINER_RUNTIME=podman
