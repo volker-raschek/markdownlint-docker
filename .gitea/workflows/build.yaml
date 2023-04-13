@@ -13,8 +13,9 @@ jobs:
     - name: checkout repo
       uses: actions/checkout@v3
     - name: Install docker
-      run:
-        apt-get update --yes
+      run: |
+        apt-get update
+        apt-get upgrade --yes
         apt-get install --yes ca-certificates curl gnupg
 
 
