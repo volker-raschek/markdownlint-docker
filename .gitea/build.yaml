@@ -1,0 +1,16 @@
+name: build
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build-x86_64:
+    runs-on: x86_64
+    steps:
+    - name: checkout repo
+      uses: actions/checkout@v3
+    - name: build application
+      run: make container-image/build
