@@ -14,5 +14,5 @@ jobs:
       uses: actions/checkout@v3
     - name: build application
       run: |
-        ls -la /var/run
+        ls -la /run
         make container-image/build CONTAINER_RUNTIME=podman
