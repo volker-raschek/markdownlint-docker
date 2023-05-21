@@ -26,5 +26,7 @@ jobs:
 
 
     - name: build application
+      env:
+        CONTAINER_RUNTIME: podman
       shell: bash
       run: make container-image/build
