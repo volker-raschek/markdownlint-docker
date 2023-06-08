@@ -11,7 +11,7 @@ platform:
 
 steps:
 - name: clone
-  image: docker.io/drone/git:1.2.1
+  image: git.cryptic.systems/volker.raschek/git:1.2.1
 
 - name: markdown lint
   commands:
@@ -63,7 +63,7 @@ platform:
 
 steps:
 - name: clone
-  image: docker.io/drone/git:1.2.1
+  image: git.cryptic.systems/volker.raschek/git:1.2.1
 
 - name: build
   image: docker.io/plugins/docker:20.10.9
@@ -126,7 +126,7 @@ platform:
 
 steps:
 - name: clone
-  image: docker.io/drone/git:1.2.1
+  image: git.cryptic.systems/volker.raschek/git:1.2.1
 
 - name: build
   image: docker.io/plugins/docker:20.10.9
@@ -189,7 +189,7 @@ platform:
 
 steps:
 - name: clone
-  image: docker.io/drone/git:1.2.1
+  image: git.cryptic.systems/volker.raschek/git:1.2.1
 
 - name: build
   image: docker.io/plugins/docker:20.10.9
@@ -252,7 +252,7 @@ platform:
 
 steps:
 - name: clone
-  image: docker.io/drone/git:1.2.1
+  image: git.cryptic.systems/volker.raschek/git:1.2.1
 
 - name: build
   image: docker.io/plugins/docker:20.10.9
@@ -313,7 +313,7 @@ platform:
 
 steps:
 - name: clone
-  image: docker.io/drone/git:1.2.1
+  image: git.cryptic.systems/volker.raschek/git:1.2.1
 
 - name: build
   image: docker.io/plugins/docker:20.10.9
@@ -374,7 +374,7 @@ platform:
 
 steps:
 - name: clone
-  image: docker.io/drone/git:1.2.1
+  image: git.cryptic.systems/volker.raschek/git:1.2.1
 
 - name: build
   image: docker.io/plugins/docker:20.10.9
@@ -431,7 +431,7 @@ clone:
 
 steps:
 - name: clone
-  image: docker.io/drone/git:1.2.1
+  image: git.cryptic.systems/volker.raschek/git:1.2.1
 
 - name: build-manifest
   image: docker.io/plugins/manifest:latest
@@ -493,7 +493,7 @@ depends_on:
 
 steps:
 - name: clone
-  image: docker.io/drone/git:1.2.1
+  image: git.cryptic.systems/volker.raschek/git:1.2.1
 
 - name: latest-docker-sync
   commands:
@@ -554,7 +554,7 @@ platform:
 
 steps:
 - name: clone
-  image: docker.io/drone/git:1.2.1
+  image: git.cryptic.systems/volker.raschek/git:1.2.1
 
 - name: build
   image: docker.io/plugins/docker:20.10.9
@@ -611,7 +611,7 @@ platform:
 
 steps:
 - name: clone
-  image: docker.io/drone/git:1.2.1
+  image: git.cryptic.systems/volker.raschek/git:1.2.1
 
 - name: build
   image: docker.io/plugins/docker:20.10.9
@@ -668,7 +668,7 @@ platform:
 
 steps:
 - name: clone
-  image: docker.io/drone/git:1.2.1
+  image: git.cryptic.systems/volker.raschek/git:1.2.1
 
 - name: build
   image: docker.io/plugins/docker:20.10.9
@@ -721,7 +721,7 @@ clone:
 
 steps:
 - name: clone
-  image: docker.io/drone/git:1.2.1
+  image: git.cryptic.systems/volker.raschek/git:1.2.1
 
 - name: build-manifest
   image: docker.io/plugins/manifest:latest
@@ -777,7 +777,7 @@ clone:
 
 steps:
 - name: clone
-  image: docker.io/drone/git:1.2.1
+  image: git.cryptic.systems/volker.raschek/git:1.2.1
 
 - name: tagged-docker-sync
   commands:
