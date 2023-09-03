@@ -17,7 +17,7 @@
       "automerge": true,
       "matchBaseBranches": [ "master" ],
       "matchManagers": [ "dockerfile" ],
-      "matchUpdateTypes": [ "patch" ]
+      "matchUpdateTypes": [ "minor", "patch" ]
     },
     {
       "addLabels": [ "renovate/markdownlint-cli", "renovate/automerge" ],
