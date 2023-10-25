@@ -7,7 +7,7 @@
   "packageRules": [
     {
       "addLabels": [ "renovate/droneci", "renovate/automerge" ],
-      "automerge": true,\\
+      "automerge": true,
       "matchManagers": "droneci",
       "matchUpdateTypes": [ "minor", "patch"]
     },
