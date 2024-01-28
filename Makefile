@@ -1,6 +1,6 @@
 # MARKDOWNLINT_VERSION
 # Only required to install a specifiy version
-MARKDOWNLINT_VERSION?=v0.38.0 # renovate: datasource=github-releases depName=igorshubovych/markdownlint-cli
+MARKDOWNLINT_VERSION?=v0.39.0 # renovate: datasource=github-releases depName=igorshubovych/markdownlint-cli
 
 # CONTAINER_RUNTIME
 # The CONTAINER_RUNTIME variable will be used to specified the path to a
