@@ -8,7 +8,6 @@
   ],
   "packageRules": [
     {
-      "addLabels": [ "renovate/markdownlint-cli", "renovate/automerge" ],
       "automerge": false,
       "matchPackageNames": [ "markdownlint-cli" ],
       "matchManagers": [ "regex" ]
