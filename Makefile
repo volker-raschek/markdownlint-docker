@@ -1,5 +1,5 @@
 # MARKDOWNLINT_VERSION
-# Only required to install a specifiy version
+# Only required to install a specify version
 MARKDOWNLINT_VERSION?=v0.44.0 # renovate: datasource=github-releases depName=igorshubovych/markdownlint-cli
 
 # CONTAINER_RUNTIME
