@@ -1,6 +1,5 @@
 # markdownlint-docker
 
-[![Build Status](https://drone.cryptic.systems/api/badges/volker.raschek/markdownlint-docker/status.svg)](https://drone.cryptic.systems/volker.raschek/markdownlint-docker)
 [![Docker Pulls](https://img.shields.io/docker/pulls/volkerraschek/markdownlint)](https://hub.docker.com/r/volkerraschek/markdownlint)
 
 This project contains all sources to build the container image
