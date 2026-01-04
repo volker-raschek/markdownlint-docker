@@ -10,7 +10,7 @@ The workflow or how `markdownlint-ci` can be used is pretty good
 [documented](https://github.com/igorshubovych/markdownlint-cli#usage).
 
 ```bash
-IMAGE_VERSION=0.45.0
+IMAGE_VERSION=0.47.0
 docker run \
   --rm \
   --volume "$(pwd):$(pwd)" \
