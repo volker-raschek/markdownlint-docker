@@ -1,5 +1,19 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": [
+        "^README\\.md$"
+      ],
+      "matchStrings": [
+        "IMAGE_VERSION=(?<currentValue>.*)"
+      ],
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "igorshubovych/markdownlint-cli",
+      "versioningTemplate": "semver"
+    }
+  ],
   "extends": [
     "local>volker.raschek/renovate-config:default#master",
     "local>volker.raschek/renovate-config:container#master",
@@ -8,9 +22,20 @@
   ],
   "packageRules": [
     {
-      "automerge": false,
-      "matchPackageNames": [ "markdownlint-cli" ],
-      "matchManagers": [ "regex" ]
+      "addLabels": [
+        "renovate/automerge"
+      ],
+      "automerge": true,
+      "matchPackageNames": [
+        "igorshubovych/markdownlint-cli"
+      ],
+      "matchManagers": [
+        "regex"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ]
     }
   ]
 }
