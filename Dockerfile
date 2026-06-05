@@ -1,4 +1,4 @@
-FROM docker.io/library/node:25.9.0-alpine AS build
+FROM docker.io/library/node:26.3.0-alpine AS build
 
 ARG MARKDOWNLINT_VERSION=master
 
